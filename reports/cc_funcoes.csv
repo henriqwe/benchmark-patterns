@@ -1,0 +1,120 @@
+padrao,arquivo,funcao,complexidade ciclomática
+Geral,src/App.tsx,App,6
+Composição,src/components/CompositionPattern/CategoryFilter/index.tsx,CategoryFilter,1
+Composição,src/components/CompositionPattern/CategoryFilter/index.tsx,(arrow),1
+Composição,src/components/CompositionPattern/CategoryFilter/index.tsx,(arrow),1
+Composição,src/components/CompositionPattern/Layout/index.tsx,Layout,4
+Composição,src/components/CompositionPattern/Pagination/index.tsx,Pagination,1
+Composição,src/components/CompositionPattern/Pagination/index.tsx,(arrow),1
+Composição,src/components/CompositionPattern/Pagination/index.tsx,(arrow),1
+Composição,src/components/CompositionPattern/ProductCard/index.tsx,ProductCard,3
+Composição,src/components/CompositionPattern/ProductCard/index.tsx,(arrow),1
+Composição,src/components/CompositionPattern/ProductCard/index.tsx,(arrow),1
+Composição,src/components/CompositionPattern/SearchInput/index.tsx,SearchInput,1
+Composição,src/components/CompositionPattern/SearchInput/index.tsx,(arrow),1
+Composição,src/components/CompositionPattern/ShortSelect/index.tsx,SortSelect,1
+Composição,src/components/CompositionPattern/ShortSelect/index.tsx,(arrow),1
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Clear/index.tsx,CatalogClear,1
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Clear/index.tsx,(arrow),1
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Feedback/index.tsx,CatalogFeedback,6
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Filters/index.tsx,CatalogFilters,1
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Filters/index.tsx,(arrow),1
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Filters/index.tsx,(arrow),2
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Filters/index.tsx,(arrow),1
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Footer/index.tsx,CatalogFooter,1
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Footer/index.tsx,(arrow),1
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Footer/index.tsx,(arrow),1
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Header/index.tsx,CatalogHeader,1
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/List/index.tsx,CatalogList,1
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/List/index.tsx,(arrow),1
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Root/index.tsx,CatalogRoot,2
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Root/index.tsx,(arrow),1
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Search/index.tsx,CatalogSearch,1
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Search/index.tsx,(arrow),1
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Search/index.tsx,(arrow),1
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Sort/index.tsx,CatalogSort,1
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Sort/index.tsx,(arrow),1
+Componentes Compostos,src/components/CompoundComponents/Catalog/components/Sort/index.tsx,(arrow),1
+Componentes Compostos,src/components/CompoundComponents/Catalog/contexts/index.ts,useCatalogCtx,2
+Componentes de ordem superior,src/components/HOC/CatalogHOCBase/index.tsx,CatalogHOCBase,7
+Componentes de ordem superior,src/components/HOC/CatalogHOCBase/index.tsx,(arrow),1
+Componentes de ordem superior,src/components/HOC/CatalogHOCBase/index.tsx,(arrow),1
+Componentes de ordem superior,src/components/HOC/CatalogHOCBase/index.tsx,(arrow),1
+Componentes de ordem superior,src/components/HOC/CatalogHOCBase/index.tsx,(arrow),1
+Componentes de ordem superior,src/components/HOC/CatalogHOCBase/index.tsx,(arrow),1
+Componentes de ordem superior,src/components/HOC/CatalogHOCBase/index.tsx,(arrow),2
+Componentes de ordem superior,src/components/HOC/CatalogHOCBase/index.tsx,(arrow),1
+Componentes de ordem superior,src/components/HOC/CatalogHOCBase/index.tsx,(arrow),1
+Componentes de ordem superior,src/components/HOC/CatalogHOCBase/index.tsx,(arrow),1
+Componentes de ordem superior,src/components/HOC/CatalogHOCBase/index.tsx,(arrow),1
+Componentes de ordem superior,src/components/HOC/CatalogHOCBase/index.tsx,(arrow),1
+Componentes de ordem superior,src/components/HOC/CatalogHOCBase/index.tsx,(arrow),1
+Componentes de ordem superior,src/components/HOC/WithProducts/index.tsx,WithProducts,1
+Componentes de ordem superior,src/components/HOC/WithProducts/index.tsx,WithProducts,1
+Componentes de ordem superior,src/components/HOC/WithWishlist/index.tsx,WithWishlist,1
+Componentes de ordem superior,src/components/HOC/WithWishlist/index.tsx,WithWishlist,1
+Apresentação e contêiner,src/components/PresentationalAndContainerPattern/CatalogHeaderUI/index.tsx,CatalogHeaderUI,1
+Apresentação e contêiner,src/components/PresentationalAndContainerPattern/FeebackUI/index.tsx,FeedbackUI,6
+Apresentação e contêiner,src/components/PresentationalAndContainerPattern/FooterUI/indext.tsx,FooterUI,1
+Apresentação e contêiner,src/components/PresentationalAndContainerPattern/ListUI/index.tsx,ListUI,1
+Apresentação e contêiner,src/components/PresentationalAndContainerPattern/ListUI/index.tsx,(arrow),1
+Apresentação e contêiner,src/components/PresentationalAndContainerPattern/ToolbarUI/index.tsx,ToolbarUI,1
+Propriedades de renderização,src/components/RenderProps/ProductsFetcher/index.tsx,ProductsFetcher,1
+Geral,src/components/core/Badge/index.tsx,Badge,5
+Geral,src/components/core/Modal/index.tsx,Modal,2
+Geral,src/components/core/StarRating/index.tsx,StarRating,1
+Geral,src/components/core/StarRating/index.tsx,(arrow),2
+Geral,src/components/core/TabButton/index.tsx,TabButton,2
+Geral,src/components/core/TabButton/index.tsx,(arrow),1
+Geral,src/hooks/useDebounce.ts,useDebounced,2
+Geral,src/hooks/useDebounce.ts,(arrow),1
+Geral,src/hooks/useDebounce.ts,(arrow),1
+Geral,src/hooks/useDebounce.ts,(arrow),1
+Geral,src/hooks/useProducts.ts,useProducts,1
+Geral,src/hooks/useProducts.ts,,4
+Geral,src/hooks/useProducts.ts,(arrow),1
+Geral,src/hooks/useWishlist.ts,useWishlist,1
+Geral,src/hooks/useWishlist.ts,(arrow),1
+Geral,src/hooks/useWishlist.ts,(arrow),2
+Geral,src/infra/products.ts,fetchProducts,2
+Geral,src/infra/products.ts,(arrow),1
+Geral,src/infra/products.ts,(arrow),1
+Geral,src/infra/products.ts,(arrow),4
+Geral,src/infra/products.ts,(arrow),5
+Geral,src/mocks/dataset.ts,(arrow),1
+Geral,src/pages/CatalogComposition/index.tsx,CatalogComposition,7
+Geral,src/pages/CatalogComposition/index.tsx,(arrow),1
+Geral,src/pages/CatalogComposition/index.tsx,(arrow),2
+Geral,src/pages/CatalogComposition/index.tsx,(arrow),1
+Geral,src/pages/CatalogComposition/index.tsx,(arrow),1
+Geral,src/pages/CatalogComposition/index.tsx,(arrow),1
+Geral,src/pages/CatalogComposition/index.tsx,(arrow),1
+Geral,src/pages/CatalogComposition/index.tsx,(arrow),1
+Geral,src/pages/CatalogComposition/index.tsx,(arrow),1
+Geral,src/pages/CatalogComposition/index.tsx,(arrow),1
+Geral,src/pages/CatalogCompound/index.tsx,CatalogCompound,1
+Geral,src/pages/CatalogPresentationalContainer/index.tsx,CatalogPresentationalContainer,4
+Geral,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
+Geral,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),2
+Geral,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
+Geral,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
+Geral,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
+Geral,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
+Geral,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
+Geral,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
+Geral,src/pages/CatalogRenderProps/index.tsx,CatalogRenderProps,2
+Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),2
+Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),6
+Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Geral,src/utils/rand.ts,(arrow),1
+Geral,src/utils/sample.ts,(arrow),1

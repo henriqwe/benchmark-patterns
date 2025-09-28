@@ -8,7 +8,10 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "cc:raw": "mkdir -p reports && npx eslint \"src/**/*.{ts,tsx,js,jsx}\" -f json -o reports/cc-report.json",
+    "cc:table": "node scripts/cc-aggregate.mjs",
+    "cc": "npm run cc:raw && npm run cc:table"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",

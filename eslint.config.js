@@ -12,8 +12,8 @@ export default defineConfig([
     files: ["**/*.{ts,tsx}"],
     rules: {
       // Habilita a regra de complexidade
-      // complexity: ["warn", { max: 0 }],
-      // "sonarjs/cognitive-complexity": ["warn", 0],
+      complexity: ["warn", { max: 0 }],
+      "sonarjs/cognitive-complexity": ["warn", 0],
     },
     plugins: { sonarjs },
     extends: [
