@@ -1,0 +1,366 @@
+[
+  {
+    "filePath": "/home/henriqwe/Documents/projects/tcc/src/App.tsx",
+    "messages": [
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Function 'App' has a complexity of 1. Maximum allowed is 0.",
+        "line": 6,
+        "column": 1,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "complex",
+        "endLine": 33,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Arrow function has a complexity of 1. Maximum allowed is 0.",
+        "line": 21,
+        "column": 26,
+        "nodeType": "ArrowFunctionExpression",
+        "messageId": "complex",
+        "endLine": 21,
+        "endColumn": 62
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Arrow function has a complexity of 1. Maximum allowed is 0.",
+        "line": 21,
+        "column": 41,
+        "nodeType": "ArrowFunctionExpression",
+        "messageId": "complex",
+        "endLine": 21,
+        "endColumn": 61
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 3,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import { useState } from 'react'\nimport reactLogo from './assets/react.svg'\nimport viteLogo from '/vite.svg'\nimport './App.css'\n\nfunction App() {\n  const [count, setCount] = useState(0)\n\n  return (\n    <>\n      <div>\n        <a href=\"https://vite.dev\" target=\"_blank\">\n          <img src={viteLogo} className=\"logo\" alt=\"Vite logo\" />\n        </a>\n        <a href=\"https://react.dev\" target=\"_blank\">\n          <img src={reactLogo} className=\"logo react\" alt=\"React logo\" />\n        </a>\n      </div>\n      <h1>Vite + React</h1>\n      <div className=\"card\">\n        <button onClick={() => setCount((count) => count + 1)}>\n          count is {count}\n        </button>\n        <p>\n          Edit <code>src/App.tsx</code> and save to test HMR\n        </p>\n      </div>\n      <p className=\"read-the-docs\">\n        Click on the Vite and React logos to learn more\n      </p>\n    </>\n  )\n}\n\nexport default App\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/home/henriqwe/Documents/projects/tcc/src/components TSX/Composition/index.tsx",
+    "messages": [
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Function 'Layout' has a complexity of 1. Maximum allowed is 0.",
+        "line": 9,
+        "column": 1,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "complex",
+        "endLine": 17,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Function 'CompositionPattern' has a complexity of 1. Maximum allowed is 0.",
+        "line": 18,
+        "column": 8,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "complex",
+        "endLine": 26,
+        "endColumn": 2
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 2,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import * as React from \"react\";\n\ntype Props = {\n  header: React.ReactNode;\n  content: React.ReactNode;\n  footer: React.ReactNode;\n};\n\nfunction Layout({ header, content, footer }: Props) {\n  return (\n    <div>\n      <header>{header}</header>\n      <main>{content}</main>\n      <footer>{footer}</footer>\n    </div>\n  );\n}\nexport function CompositionPattern() {\n  return (\n    <Layout\n      header={<div>header</div>}\n      content={<div>content</div>}\n      footer={<div>footer</div>}\n    />\n  );\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/home/henriqwe/Documents/projects/tcc/src/components TSX/CompoundComponents/index.tsx",
+    "messages": [
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Function 'Root' has a complexity of 1. Maximum allowed is 0.",
+        "line": 1,
+        "column": 1,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "complex",
+        "endLine": 3,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Function 'Tab' has a complexity of 1. Maximum allowed is 0.",
+        "line": 5,
+        "column": 1,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "complex",
+        "endLine": 7,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Function 'Panel' has a complexity of 1. Maximum allowed is 0.",
+        "line": 9,
+        "column": 1,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "complex",
+        "endLine": 11,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Function 'CompoundComponents' has a complexity of 1. Maximum allowed is 0.",
+        "line": 19,
+        "column": 8,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "complex",
+        "endLine": 26,
+        "endColumn": 2
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 4,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "function Root({ children }: { children: React.ReactNode }) {\n  return <div className=\"tabs\">{children}</div>;\n}\n\nfunction Tab({ label }: { label: string }) {\n  return <button>{label}</button>;\n}\n\nfunction Panel({ children }: { children: React.ReactNode }) {\n  return <div>{children}</div>;\n}\n\nconst Tabs = {\n  Root,\n  Tab,\n  Panel,\n};\n\nexport function CompoundComponents() {\n  return (\n    <Tabs.Root>\n      <Tabs.Tab label=\"Tab 1\" />\n      <Tabs.Panel>Content 1</Tabs.Panel>\n    </Tabs.Root>\n  );\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/home/henriqwe/Documents/projects/tcc/src/components TSX/Hoc/index.tsx",
+    "messages": [
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Function 'withLogger' has a complexity of 1. Maximum allowed is 0.",
+        "line": 3,
+        "column": 1,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "complex",
+        "endLine": 8,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Function 'Wrapped' has a complexity of 1. Maximum allowed is 0.",
+        "line": 4,
+        "column": 10,
+        "nodeType": "FunctionExpression",
+        "messageId": "complex",
+        "endLine": 7,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Arrow function has a complexity of 1. Maximum allowed is 0.",
+        "line": 9,
+        "column": 40,
+        "nodeType": "ArrowFunctionExpression",
+        "messageId": "complex",
+        "endLine": 11,
+        "endColumn": 2
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 3,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import type { ComponentType } from \"react\";\n\nfunction withLogger<P>(Component: ComponentType<P>): ComponentType<P> {\n  return function Wrapped(props: P) {\n    console.log(\"Rendering with props:\", props);\n    return <Component {...props} />;\n  };\n}\nexport const LoggedButton = withLogger((props) => (\n  <button {...props}>test</button>\n));\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/home/henriqwe/Documents/projects/tcc/src/components TSX/PresentationalAndContainer/index.tsx",
+    "messages": [
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Function 'UserList' has a complexity of 1. Maximum allowed is 0.",
+        "line": 6,
+        "column": 1,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "complex",
+        "endLine": 14,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Arrow function has a complexity of 1. Maximum allowed is 0.",
+        "line": 9,
+        "column": 18,
+        "nodeType": "ArrowFunctionExpression",
+        "messageId": "complex",
+        "endLine": 11,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Function 'PresentationalAndContainerPattern' has a complexity of 1. Maximum allowed is 0.",
+        "line": 17,
+        "column": 8,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "complex",
+        "endLine": 20,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Function 'useFetchUsers' has a complexity of 1. Maximum allowed is 0.",
+        "line": 22,
+        "column": 1,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "complex",
+        "endLine": 38,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Arrow function has a complexity of 1. Maximum allowed is 0.",
+        "line": 25,
+        "column": 19,
+        "nodeType": "ArrowFunctionExpression",
+        "messageId": "complex",
+        "endLine": 35,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Function 'fakePromise' has a complexity of 1. Maximum allowed is 0.",
+        "line": 26,
+        "column": 5,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "complex",
+        "endLine": 32,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Arrow function has a complexity of 1. Maximum allowed is 0.",
+        "line": 27,
+        "column": 26,
+        "nodeType": "ArrowFunctionExpression",
+        "messageId": "complex",
+        "endLine": 31,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Arrow function has a complexity of 1. Maximum allowed is 0.",
+        "line": 28,
+        "column": 20,
+        "nodeType": "ArrowFunctionExpression",
+        "messageId": "complex",
+        "endLine": 30,
+        "endColumn": 10
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 8,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React from \"react\";\n\n// Componente \"burro\" (UI apenas)\ntype User = { name: string };\n\nfunction UserList({ users }: { users: User[] }) {\n  return (\n    <ul>\n      {users.map((user) => (\n        <li key={user.name}>{user.name}</li>\n      ))}\n    </ul>\n  );\n}\n\n// Componente \"inteligente\"\nexport function PresentationalAndContainerPattern() {\n  const users = useFetchUsers();\n  return <UserList users={users} />;\n}\n\nfunction useFetchUsers() {\n  const [users, setUsers] = React.useState<User[]>([]);\n\n  React.useEffect(() => {\n    function fakePromise(): Promise<User[]> {\n      return new Promise((resolve) => {\n        setTimeout(() => {\n          resolve([{ name: \"Alice\" }, { name: \"Bob\" }, { name: \"Charlie\" }]);\n        }, 1000);\n      });\n    }\n\n    fakePromise().then(setUsers);\n  }, []);\n\n  return users;\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/home/henriqwe/Documents/projects/tcc/src/components TSX/RenderProps/index.tsx",
+    "messages": [
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Function 'useFetchData' has a complexity of 1. Maximum allowed is 0.",
+        "line": 4,
+        "column": 1,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "complex",
+        "endLine": 6,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Function 'DataFetcher' has a complexity of 1. Maximum allowed is 0.",
+        "line": 8,
+        "column": 1,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "complex",
+        "endLine": 11,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Function 'RenderProps' has a complexity of 1. Maximum allowed is 0.",
+        "line": 13,
+        "column": 8,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "complex",
+        "endLine": 25,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Arrow function has a complexity of 1. Maximum allowed is 0.",
+        "line": 16,
+        "column": 15,
+        "nodeType": "ArrowFunctionExpression",
+        "messageId": "complex",
+        "endLine": 22,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 1,
+        "message": "Arrow function has a complexity of 1. Maximum allowed is 0.",
+        "line": 18,
+        "column": 21,
+        "nodeType": "ArrowFunctionExpression",
+        "messageId": "complex",
+        "endLine": 20,
+        "endColumn": 12
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 5,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "type DataFetcherProps = {\n  render: (data: string[]) => React.ReactNode;\n};\nfunction useFetchData() {\n  return [];\n}\n\nfunction DataFetcher({ render }: DataFetcherProps) {\n  const data = useFetchData();\n  return render(data);\n}\n\nexport function RenderProps() {\n  return (\n    <DataFetcher\n      render={(data) => (\n        <ul>\n          {data.map((d) => (\n            <li>{d}</li>\n          ))}\n        </ul>\n      )}\n    />\n  );\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/home/henriqwe/Documents/projects/tcc/src/main.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  }
+]

@@ -1,5 +1,6 @@
 {
-  "name": "tcc",
+  "name": "benchmark-patterns",
+  "author": "Claudio Aleluia",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +11,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.13",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.13"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
@@ -19,13 +22,17 @@
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.3",
     "babel-plugin-react-compiler": "^19.1.0-rc.3",
+    "complexity-report": "^2.0.0-alpha",
     "eslint": "^9.36.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
+    "eslint-plugin-sonarjs": "^3.0.5",
     "globals": "^16.4.0",
+    "jscpd": "^4.0.5",
+    "madge": "^8.0.0",
+    "plato": "^1.7.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.44.0",
     "vite": "^7.1.7"
-  },
-  "packageManager": "yarn@4.9.2+sha256.ca4310f8ba997b4643a000ce512d9772e01c1485df35511114b325315960acb7"
+  }
 }

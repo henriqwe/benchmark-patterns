@@ -1,0 +1,23 @@
+{
+  "App.css": [],
+  "App.tsx": [
+    "App.css",
+    "assets/react.svg"
+  ],
+  "assets/react.svg": [],
+  "components JSX/Composition/index.jsx": [],
+  "components JSX/CompoundComponents/index.jsx": [],
+  "components JSX/Hoc/index.jsx": [],
+  "components JSX/PresentationalAndContainer/index.jsx": [],
+  "components JSX/RenderProps/index.jsx": [],
+  "components TSX/Composition/index.tsx": [],
+  "components TSX/CompoundComponents/index.tsx": [],
+  "components TSX/Hoc/index.tsx": [],
+  "components TSX/PresentationalAndContainer/index.tsx": [],
+  "components TSX/RenderProps/index.tsx": [],
+  "index.css": [],
+  "main.tsx": [
+    "App.tsx",
+    "index.css"
+  ]
+}

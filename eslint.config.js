@@ -4,6 +4,7 @@ import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 import tseslint from "typescript-eslint";
 import { defineConfig, globalIgnores } from "eslint/config";
+import sonarjs from "eslint-plugin-sonarjs";
 
 export default defineConfig([
   globalIgnores(["dist"]),
@@ -11,15 +12,15 @@ export default defineConfig([
     files: ["**/*.{ts,tsx}"],
     rules: {
       // Habilita a regra de complexidade
-      complexity: ["warn", { max: 0 }],
-      // valor alto só para coletar métricas
+      // complexity: ["warn", { max: 0 }],
+      // "sonarjs/cognitive-complexity": ["warn", 0],
     },
+    plugins: { sonarjs },
     extends: [
       js.configs.recommended,
       tseslint.configs.recommended,
       reactHooks.configs["recommended-latest"],
       reactRefresh.configs.vite,
-      tseslint.configs.recommendedTypeChecked,
     ],
     languageOptions: {
       ecmaVersion: 2020,
