@@ -11,7 +11,7 @@ export default defineConfig([
     files: ["**/*.{ts,tsx}"],
     rules: {
       // Habilita a regra de complexidade
-      complexity: ["warn", { max: 1000 }],
+      complexity: ["warn", { max: 0 }],
       // valor alto só para coletar métricas
     },
     extends: [
@@ -19,6 +19,7 @@ export default defineConfig([
       tseslint.configs.recommended,
       reactHooks.configs["recommended-latest"],
       reactRefresh.configs.vite,
+      tseslint.configs.recommendedTypeChecked,
     ],
     languageOptions: {
       ecmaVersion: 2020,
