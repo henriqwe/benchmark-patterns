@@ -14,7 +14,7 @@ import { ProductsFetcher } from "../../components/RenderProps/ProductsFetcher";
 export function CatalogRenderProps() {
   const [params, setParams] = React.useState<QueryParams>({
     page: 1,
-    pageSize: 20,
+    pageSize: 10,
     q: "",
     categories: [],
     sort: "price_asc",
@@ -52,7 +52,7 @@ export function CatalogRenderProps() {
           onClick={() =>
             setParams({
               page: 1,
-              pageSize: 20,
+              pageSize: 10,
               q: "",
               categories: [],
               sort: "price_asc",

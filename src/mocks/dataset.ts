@@ -7,18 +7,18 @@ import { CATEGORIES } from "./categories";
 export const DATASET: Product[] = Array.from({ length: 200 }).map((_, i) => {
   const cat = sample(CATEGORIES);
   const baseNames: Record<Product["category"], string[]> = {
-    Electronics: [
-      "Headphones",
-      "Keyboard",
+    Eletrônicos: [
+      "Fones de ouvido",
+      "Teclado",
       "Mouse",
       "Monitor",
       "Webcam",
       "SSD",
     ],
-    Books: ["Design Patterns", "Clean Code", "Refactoring", "Domain‑Driven"],
-    Clothing: ["T‑Shirt", "Jeans", "Sneakers", "Jacket"],
-    Home: ["Lamp", "Chair", "Table", "Cushion"],
-    Toys: ["Puzzle", "Robot", "Lego", "Doll"],
+    Livros: ["Design Patterns", "Clean Code", "Refactoring", "Domain‑Driven"],
+    Roupas: ["T‑Shirt", "Jeans", "Tênis", "Jaqueta"],
+    Casa: ["Lâmpada", "Cadeira", "Mesa", "Almofada"],
+    Brinquedos: ["Quebra-cabeça", "Robô", "Lego", "Boneca"],
   };
   const name = `${cat} ${sample(baseNames[cat])} ${i + 1}`;
   return {

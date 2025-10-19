@@ -61,7 +61,7 @@ export function CatalogHOCBase({
           onClick={() =>
             setParams({
               page: 1,
-              pageSize: 20,
+              pageSize: 10,
               q: "",
               categories: [],
               sort: "price_asc",

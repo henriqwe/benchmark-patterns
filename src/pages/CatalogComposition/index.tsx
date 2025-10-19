@@ -17,7 +17,7 @@ export function CatalogComposition() {
   const [cats, setCats] = React.useState<string[]>([]);
   const [sort, setSort] = React.useState<QueryParams["sort"]>("price_asc");
   const [page, setPage] = React.useState(1);
-  const pageSize = 20;
+  const pageSize = 10;
   const { items, total, loading, error, retry } = useProducts({
     page,
     pageSize,

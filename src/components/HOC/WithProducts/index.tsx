@@ -8,7 +8,7 @@ export function WithProducts<T extends WithProductsInjected>(
   return function WithProducts(props: Omit<T, keyof WithProductsInjected>) {
     const [params, setParams] = React.useState<QueryParams>({
       page: 1,
-      pageSize: 20,
+      pageSize: 10,
       q: "",
       categories: [],
       sort: "price_asc",

@@ -1,0 +1,18 @@
+padrao,arquivo,funcao,cognitiva
+Composição,components/CompositionPattern/ProductCard/index.tsx,(função),2
+Componentes Compostos,components/CompoundComponents/Catalog/components/Feedback/index.tsx,(função),1
+Componentes Compostos,components/CompoundComponents/Catalog/components/Filters/index.tsx,(função),1
+Componentes Compostos,components/CompoundComponents/Catalog/contexts/index.ts,(função),1
+Componentes de ordem superior,components/HOC/CatalogHOCBase/index.tsx,(função),1
+Geral,components/core/Badge/index.tsx,(função),6
+Geral,components/core/Modal/index.tsx,(função),1
+Geral,components/core/StarRating/index.tsx,(função),1
+Geral,components/core/TabButton/index.tsx,(função),1
+Geral,hooks/useProducts.ts,(função),1
+Geral,hooks/useWishlist.ts,(função),2
+Geral,infra/products.ts,(função),1
+Geral,infra/products.ts,(função),1
+Geral,infra/products.ts,(função),1
+Geral,pages/CatalogComposition/index.tsx,(função),1
+Geral,pages/CatalogPresentationalContainer/index.tsx,(função),1
+Geral,pages/CatalogRenderProps/index.tsx,(função),1

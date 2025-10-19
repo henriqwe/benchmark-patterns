@@ -7,7 +7,7 @@ export type TabKey =
 
 export type QueryParams = {
   page: number; // 1‑based
-  pageSize: number; // default 20
+  pageSize: number; // default 10
   q: string; // text search
   categories: string[]; // subset of categories
   sort: "price_asc" | "price_desc" | "rating_desc" | "rating_asc";
@@ -18,7 +18,7 @@ export type Paged<T> = { items: T[]; total: number };
 export type Product = {
   id: string;
   name: string;
-  category: "Electronics" | "Books" | "Clothing" | "Home" | "Toys";
+  category: "Eletrônicos" | "Livros" | "Roupas" | "Casa" | "Brinquedos";
   price: number; // BRL
   rating: number; // 1..5
   status: Status;

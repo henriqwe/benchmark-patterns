@@ -11,7 +11,10 @@
     "preview": "vite preview",
     "cc:raw": "mkdir -p reports && npx eslint \"src/**/*.{ts,tsx,js,jsx}\" -f json -o reports/cc-report.json",
     "cc:table": "node scripts/cc-aggregate.mjs",
-    "cc": "npm run cc:raw && npm run cc:table"
+    "cc": "npm run cc:raw && npm run cc:table",
+    "maint:cognitiva:raw": "node -e \"require('fs').mkdirSync('reports',{recursive:true})\" && npx eslint \"src/**/*.{ts,tsx,js,jsx}\" -f json -o reports/cognitiva.json",
+    "maint:cognitiva:table": "node scripts/cognitiva-aggregate.mjs",
+    "maint:cognitiva": "npm run maint:cognitiva:raw && npm run maint:cognitiva:table"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
@@ -37,5 +40,6 @@
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.44.0",
     "vite": "^7.1.7"
-  }
+  },
+  "packageManager": "yarn@4.9.2+sha256.ca4310f8ba997b4643a000ce512d9772e01c1485df35511114b325315960acb7"
 }
