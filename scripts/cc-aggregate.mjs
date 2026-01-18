@@ -32,8 +32,8 @@ for (const file of data) {
     const func = fnMatch
       ? fnMatch[1]
       : msg.includes("Arrow function")
-      ? "(arrow)"
-      : "";
+        ? "(arrow)"
+        : "";
     const ccMatch = msg.match(/complexity\s*of\s*(\d+)/i);
     const cc = ccMatch ? Number(ccMatch[1]) : NaN;
 
@@ -41,14 +41,14 @@ for (const file of data) {
       padrao: classify(filePath),
       arquivo: filePath.split("/tcc/")[1] || filePath,
       funcao: func,
-      "complexidade ciclomática": cc,
+      cc,
     });
   }
 }
 
 if (!rows.length) {
   console.error(
-    "Nenhuma mensagem de complexidade encontrada. Verifique se a regra está com max=0 e se o glob inclui seus arquivos."
+    "Nenhuma mensagem de complexidade encontrada. Verifique se a regra está com max=0 e se o glob inclui seus arquivos.",
   );
   process.exit(1);
 }
@@ -58,7 +58,7 @@ const toCSV = (arr) => {
   return [
     headers.join(","),
     ...arr.map((r) =>
-      headers.map((h) => String(r[h]).replaceAll(",", " ")).join(",")
+      headers.map((h) => String(r[h]).replaceAll(",", " ")).join(","),
     ),
   ].join("\n");
 };

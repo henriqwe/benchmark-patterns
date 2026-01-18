@@ -1,7 +1,3 @@
-import React from "react";
-import type { Product, QueryParams } from "../../types";
-import { useProducts } from "../../hooks/useProducts";
-import { useWishlist } from "../../hooks/useWishlist";
 import { Modal } from "../../components/core/Modal";
 import { StarRating } from "../../components/core/StarRating";
 import { CatalogHeaderUI } from "../../components/PresentationalAndContainerPattern/CatalogHeaderUI";
@@ -10,26 +6,31 @@ import { FeedbackUI } from "../../components/PresentationalAndContainerPattern/F
 import { ListUI } from "../../components/PresentationalAndContainerPattern/ListUI";
 import { FooterUI } from "../../components/PresentationalAndContainerPattern/FooterUI/indext";
 import { Badge } from "../../components/core/Badge";
+import { useCatalogPresentationalContainer } from "./hook";
 
 export function CatalogPresentationalContainer() {
-  const [q, setQ] = React.useState("");
-  const [cats, setCats] = React.useState<string[]>([]);
-  const [sort, setSort] = React.useState<QueryParams["sort"]>("price_asc");
-  const [page, setPage] = React.useState(1);
-  const pageSize = 10;
-  const { items, total, loading, error, retry } = useProducts({
+  const {
+    count,
+    error,
+    items,
+    loading,
+    open,
+    retry,
+    setOpen,
+    setPage,
+    setQ,
+    setSort,
+    toggle,
+    toggleCat,
+    total,
+    wish,
+    cats,
     page,
     pageSize,
     q,
-    categories: cats,
+    setCats,
     sort,
-  });
-  const { set: wish, toggle, count } = useWishlist();
-  const [open, setOpen] = React.useState<Product | null>(null);
-  const toggleCat = (c: string) =>
-    setCats((arr) =>
-      arr.includes(c) ? arr.filter((x) => x !== c) : [...arr, c]
-    );
+  } = useCatalogPresentationalContainer();
 
   return (
     <div
