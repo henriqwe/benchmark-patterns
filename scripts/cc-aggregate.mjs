@@ -11,17 +11,14 @@ if (!fs.existsSync(SRC)) {
 const data = JSON.parse(fs.readFileSync(SRC, "utf8"));
 
 const classify = (p) => {
-  if (p.includes("/components/CompositionPattern/")) return "Composição";
-  if (p.includes("/components/PresentationalAndContainerPattern/"))
-    return "Apresentação e contêiner";
-  if (p.includes("/components/HOC/")) return "Componentes de ordem superior";
-  if (p.includes("/components/RenderProps/"))
-    return "Propriedades de renderização";
-  if (p.includes("/components/CompoundComponents/"))
-    return "Componentes Compostos";
+  p = p.toLowerCase();
+  if (p.includes("composition")) return "Composição";
+  if (p.includes("presentational")) return "Apresentação e contêiner";
+  if (p.includes("hoc")) return "Componentes de ordem superior";
+  if (p.includes("renderprops")) return "Propriedades de renderização";
+  if (p.includes("compound")) return "Componentes Compostos";
   return "Geral";
 };
-
 const rows = [];
 for (const file of data) {
   const filePath = file.filePath || "";

@@ -1,4 +1,4 @@
-padrao,arquivo,funcao,complexidade ciclomática
+padrao,arquivo,funcao,cc
 Geral,src/App.tsx,App,6
 Composição,src/components/CompositionPattern/CategoryFilter/index.tsx,CategoryFilter,1
 Composição,src/components/CompositionPattern/CategoryFilter/index.tsx,(arrow),1
@@ -82,39 +82,40 @@ Geral,src/infra/products.ts,(arrow),1
 Geral,src/infra/products.ts,(arrow),4
 Geral,src/infra/products.ts,(arrow),5
 Geral,src/mocks/dataset.ts,(arrow),1
-Geral,src/pages/CatalogComposition/index.tsx,CatalogComposition,7
-Geral,src/pages/CatalogComposition/index.tsx,(arrow),1
-Geral,src/pages/CatalogComposition/index.tsx,(arrow),2
-Geral,src/pages/CatalogComposition/index.tsx,(arrow),1
-Geral,src/pages/CatalogComposition/index.tsx,(arrow),1
-Geral,src/pages/CatalogComposition/index.tsx,(arrow),1
-Geral,src/pages/CatalogComposition/index.tsx,(arrow),1
-Geral,src/pages/CatalogComposition/index.tsx,(arrow),1
-Geral,src/pages/CatalogComposition/index.tsx,(arrow),1
-Geral,src/pages/CatalogComposition/index.tsx,(arrow),1
-Geral,src/pages/CatalogCompound/index.tsx,CatalogCompound,1
-Geral,src/pages/CatalogPresentationalContainer/index.tsx,CatalogPresentationalContainer,4
-Geral,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
-Geral,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),2
-Geral,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
-Geral,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
-Geral,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
-Geral,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
-Geral,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
-Geral,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
-Geral,src/pages/CatalogRenderProps/index.tsx,CatalogRenderProps,2
-Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
-Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
-Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
-Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
-Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
-Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),2
-Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
-Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
-Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),6
-Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
-Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
-Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
-Geral,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Composição,src/pages/CatalogComposition/index.tsx,CatalogComposition,7
+Composição,src/pages/CatalogComposition/index.tsx,(arrow),1
+Composição,src/pages/CatalogComposition/index.tsx,(arrow),2
+Composição,src/pages/CatalogComposition/index.tsx,(arrow),1
+Composição,src/pages/CatalogComposition/index.tsx,(arrow),1
+Composição,src/pages/CatalogComposition/index.tsx,(arrow),1
+Composição,src/pages/CatalogComposition/index.tsx,(arrow),1
+Composição,src/pages/CatalogComposition/index.tsx,(arrow),1
+Composição,src/pages/CatalogComposition/index.tsx,(arrow),1
+Composição,src/pages/CatalogComposition/index.tsx,(arrow),1
+Componentes Compostos,src/pages/CatalogCompound/index.tsx,CatalogCompound,1
+Apresentação e contêiner,src/pages/CatalogPresentationalContainer/hook.ts,useCatalogPresentationalContainer,1
+Apresentação e contêiner,src/pages/CatalogPresentationalContainer/hook.ts,(arrow),1
+Apresentação e contêiner,src/pages/CatalogPresentationalContainer/hook.ts,(arrow),2
+Apresentação e contêiner,src/pages/CatalogPresentationalContainer/hook.ts,(arrow),1
+Apresentação e contêiner,src/pages/CatalogPresentationalContainer/index.tsx,CatalogPresentationalContainer,4
+Apresentação e contêiner,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
+Apresentação e contêiner,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
+Apresentação e contêiner,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
+Apresentação e contêiner,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
+Apresentação e contêiner,src/pages/CatalogPresentationalContainer/index.tsx,(arrow),1
+Propriedades de renderização,src/pages/CatalogRenderProps/index.tsx,CatalogRenderProps,2
+Propriedades de renderização,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Propriedades de renderização,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Propriedades de renderização,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Propriedades de renderização,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Propriedades de renderização,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Propriedades de renderização,src/pages/CatalogRenderProps/index.tsx,(arrow),2
+Propriedades de renderização,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Propriedades de renderização,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Propriedades de renderização,src/pages/CatalogRenderProps/index.tsx,(arrow),6
+Propriedades de renderização,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Propriedades de renderização,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Propriedades de renderização,src/pages/CatalogRenderProps/index.tsx,(arrow),1
+Propriedades de renderização,src/pages/CatalogRenderProps/index.tsx,(arrow),1
 Geral,src/utils/rand.ts,(arrow),1
 Geral,src/utils/sample.ts,(arrow),1

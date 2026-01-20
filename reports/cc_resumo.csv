@@ -1,7 +1,7 @@
 padrao,CC_média,CC_mediana,CC_mínima,CC_máxima,N_funções
-Apresentação e contêiner,1.83,1,1,6,6
-Componentes Compostos,1.36,1,1,6,22
+Apresentação e contêiner,1.56,1,1,6,16
+Componentes Compostos,1.35,1,1,6,23
 Componentes de ordem superior,1.41,1,1,7,17
-Composição,1.36,1,1,4,14
-Geral,1.73,1,1,7,59
-Propriedades de renderização,1,1,1,1,1
+Composição,1.5,1,1,7,24
+Geral,2,1,1,6,25
+Propriedades de renderização,1.47,1,1,6,15

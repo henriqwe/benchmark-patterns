@@ -9,14 +9,12 @@ if (!fs.existsSync(SRC)) {
 }
 const data = JSON.parse(fs.readFileSync(SRC, "utf8"));
 const classify = (p) => {
-  if (p.includes("/components/CompositionPattern/")) return "Composição";
-  if (p.includes("/components/PresentationalAndContainerPattern/"))
-    return "Apresentação e contêiner";
-  if (p.includes("/components/HOC/")) return "Componentes de ordem superior";
-  if (p.includes("/components/RenderProps/"))
-    return "Propriedades de renderização";
-  if (p.includes("/components/CompoundComponents/"))
-    return "Componentes Compostos";
+  p = p.toLowerCase();
+  if (p.includes("composition")) return "Composição";
+  if (p.includes("presentational")) return "Apresentação e contêiner";
+  if (p.includes("hoc")) return "Componentes de ordem superior";
+  if (p.includes("renderprops")) return "Propriedades de renderização";
+  if (p.includes("compound")) return "Componentes Compostos";
   return "Geral";
 };
 
@@ -55,7 +53,7 @@ fs.writeFileSync(
   head1 +
     rows
       .map((r) => `${r.padrao},${r.arquivo},${r.funcao},${r.cognitiva}`)
-      .join("\n")
+      .join("\n"),
 );
 
 const groups = rows.reduce((acc, r) => {
@@ -67,7 +65,7 @@ const stats = (arr) => {
     n = s.length;
   const mean = +(s.reduce((a, b) => a + b, 0) / n).toFixed(2);
   const med = +(n % 2 ? s[(n - 1) / 2] : (s[n / 2 - 1] + s[n / 2]) / 2).toFixed(
-    2
+    2,
   );
   return { n, mean, med, min: s[0], max: s[n - 1] };
 };
